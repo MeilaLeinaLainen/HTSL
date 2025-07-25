@@ -33,8 +33,7 @@ export function loadAction(script, deleteExisting) {
                     addOperation({ type: 'option', option: script[container].contextTarget.name });
                     break;
                 case "COMMAND":
-                    addOperation({ type: 'chat', text: '/customcommands', command: true });
-                    addOperation({ type: 'option', option: `/${script[container].contextTarget.name}` });
+                    addOperation({ type: 'chat', text: `/command edit ${script[container].contextTarget.name}`, func: "/command create " + script[container].contextTarget.name, command: true });
                     break;
                 case "NPC":
                     addOperation({ type: 'goto', name: script[container].contextTarget.name });
