@@ -23,7 +23,7 @@ You can find BusterBrown1218's repository [here](https://github.com/BusterBrown1
 Currently I've added/fixed `2` features which I explain below:
 
 ### Fixes:
-- **Fixed 'goto command..' getting stuck in already existing command.**
+- none yet
 
 ### Updates:
 - **Import item to GUI slot.**<br>
@@ -33,3 +33,6 @@ This is a very small yet handy update that builds from the recent 'goto gui' add
 goto gui "Test" 5 "stone" /* "stone" uses 'stone.json' in your imports folder */
 chat "wasup world"
 ```
+
+- **Detailed exported filenames.**<br>
+Tiny update that makes the file you generate when you export actions to have it's own unique name to not only explain what it is, but also to stop overwriting the files if you want to export many things at once.
